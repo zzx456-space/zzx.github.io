@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta標籤 -->
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content="一刀修羅的網頁,裡面很有料"/>
+        <meta name="author" content="一刀修羅"/>
+        <meta name="keyword" content="一刀修羅,html,css"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title>一刀修羅的網頁</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <!--基本標籤-->
+        <!-- css 實線-->
+        <!--padding & maring-->
+        <!--float & display-->
+        <!--class & id-->
+        <script>
+            const https = require('https');
+            const fs = require('fs');
+
+            const options = {
+              key: fs.readFileSync('private-key.pem'),
+              cert: fs.readFileSync('certificate.pem')
+            };
+
+            const server = https.createServer(options, (req, res) => {
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'text/plain');
+              res.end('Hello, World (over HTTPS)!');
+            });
+            const port = 443;
+
+            server.listen(port, () => {
+              console.log(`Server running at https://localhost:${port}/`);
+            });
+
+        </script>
+        <ul style="float:right;position:fixed ;right: 0px;;background-color: aqua; margin:0px;padding: 15px;">
+            <li><a href="page2.html">主頁
+
+                </a>
+            </li>
+            <li>
+                <a href="dir/page3.html">部落格
+
+                </a>
+            </li>
+            <li>關於</li>
+            <li>聯絡我們</li> 
+        </ul>
+        <div>
+            <h1 style="margin-left: 20px; font-size:30px;">第一篇文章</h1>
+            <p style="padding: 20px;margin: 20px; background-color:greenyellow">鮮榨柳
+                <b style="border: 1px solid black;">
+                    丁特
+                </b>調
+            </p>
+        </div>
+        
+        <br/>
+        <br/>
+        <hr/>
+        <h2>第二篇文章</h2>
+        <p>甘蔗青</p>
+
+        <!-- animation -->
+        <div class="box box-animation"></div>
+        <br/>
+        <br/>
+
+        <!-- jav -->
+
+        <img src="html-css-js.png"/ width="600">
+        <!--script>
+            document.write("html,css,javscript")
+
+
+        </script-->
+        <script src="script.js">
+
+
+        </script>
+
+
+
+         <!-- flex-->
+        <div class="container">
+        <div class="box-1">區塊一</div>
+        <div class="box-2">區塊二</div>
+        <div class="box-3">區塊三</div>
+        <div class="box-1">區塊一</div>
+        <div class="box-2">區塊二</div>
+        <div class="box-3">區塊三</div>
+        <div class="box-1">區塊一</div>
+        <div class="box-2">區塊二</div>
+
+        
+        </div>
+
+        <!--連結 % 圖片 -->
+        <!-- opacity & border-radius -->
+        <span style="opacity: 0.6; width: 90px; height: 30px; border-radius: 30px;border: 3px solid black;" class="door-1">
+            <a href="https://google.com ">google網站</a>
+
+        </span>
+
+        <span style="opacity: 0.5; width: 90px; height: 30px; background-color: rgb(0, 255, 123); border-radius: 30px;border: 3px solid black;">   
+        <a href="page2.html">第二頁</a>
+        </span> 
+
+        <span style="opacity: 0.6; width: 90px; height: 30px;border-radius: 30px;border: 3px solid black;"id="id-1">
+        <a href="dir/page3.html">第三頁</a>
+        </span> 
+
+        <span style="opacity: 0.5; width: 90px; height: 30px; background-color: rgb(0, 255, 123); border-radius: 30px;border: 3px solid black;">
+        <a href="UwAAwby.jpg">椅子哥</a>
+        </span> 
+
+
+        <br/>
+        <img src="https://i.imgur.com/d0s31wx.jpeg"/ width="600" >
+        <br/>
+        <img src="UwAAwby.jpg"/ width="600" >
+
+        <!-- 影片 &  嵌入youtube影片-->
+        <br/>
+        <video src="door_480p.mp4" controls width="600">遊覽器無法載入影片</video>
+
+        
+        <!-- 列表 & 表格-->
+        <ol type="i" style="color: red;">
+            <li>youtube</li>
+            <li>lnstagram</li>
+            <li>facebook</li>
+            
+        </ol>
+
+        <!-- html的容器 div & span -->
+        <span>spaan1</span>
+        <span>spaan2</span>
+        <hr/>
+        <div>div1</div>
+        <div>div2</div>
+        <br/>
+        <br/>
+
+
+
+
+        <!-- html輸入標籤 -->
+        <input type="text" placeholder="請輸入帳號" />
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入密碼" />
+
+
+
+
+    </body>
+</html>
